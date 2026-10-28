@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top" data-i18n="nav.brand">Portofolio</a>
+      <div class="nav__links" id="navLinks">
+        <a href="#about" data-i18n="nav.about">Tentang</a>
+        <a href="#education" data-i18n="nav.education">Pendidikan</a>
+        <a href="#skills" data-i18n="nav.skills">Skill</a>
+        <a href="#work" data-i18n="nav.work">Karya</a>
+        <a href="#certificates" data-i18n="nav.certs">Sertifikat</a>
+      </div>
+      <div class="nav__actions">
+        <div class="lang" role="group" aria-label="Bahasa / Language">
+          <button type="button" class="lang__btn" data-lang="id" aria-pressed="true" aria-label="Bahasa Indonesia">ID</button>
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false" aria-label="English">EN</button>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Buka menu" data-i18n-label="nav.menu" aria-expanded="false">
+          <span class="nav__toggleBar"></span>
+          <span class="nav__toggleBar"></span>
+          <span class="nav__toggleBar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Intro">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__left">
+          <div class="hero__portraitWrap">
+            <div class="hero__portraitGlow" aria-hidden="true"></div>
+            <img class="hero__portrait" src="foto_latarbelakang.jpg" alt="Foto latar belakang" data-i18n-alt="img.portrait" />
+          </div>
+        </div>
+        <div class="hero__right">
+          <p class="eyebrow">Front-End Developer</p>
+          <h1 class="title">Julius Kevin Hutomo</h1>
+          <p class="subtitle" data-i18n="hero.subtitle">
+            Saya adalah seorang web developer yang fokus di bidang <strong>Front-End</strong> (HTML, CSS, JavaScript).
+            Saya telah berhasil membuat website <strong>company profile</strong> dengan fitur <strong>booking</strong> terintegrasi
+            dalam satu website.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#work" data-i18n="hero.work">Lihat Karya</a>
+            <a class="btn btn--ghost" href="#certificates" data-i18n="hero.certs">Lihat Sertifikat</a>
+          </div>
+          <div class="hero__meta">
+            <div class="chip">HTML</div>
+            <div class="chip">CSS</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">Responsive Design</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="about.title">Tentang Saya</h2>
+          <p class="section__desc" data-i18n="about.desc">Ringkas, jelas, dan profesional.</p>
+        </div>
+        <div class="card">
+          <p class="bodyText" data-i18n="about.body">
+            Saya adalah seorang web developer bidang yang saya geluti adalah front-end developer (HTML, CSS, JS)
+            yang telah berhasil membuat karya website company profil yang dilengkapi fitur booking terintegrasi dalam satu website.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="edu.title">Riwayat Pendidikan</h2>
+          <p class="section__desc" data-i18n="edu.desc">Perjalanan pendidikan saya.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3>Universitas Muhammadiyah Surabaya</h3>
+              <p class="muted" data-i18n="edu.now">2023 - sekarang</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3>SMALB YPAC Surabaya</h3>
+              <p class="muted">2019 - 2023</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3>SMPLB YPAC Surabaya</h3>
+              <p class="muted">2016 - 2019</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3>SDLB YPAC Surabaya</h3>
+              <p class="muted">2010 - 2016</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="nav.skills">Skill</h2>
+          <p class="section__desc" data-i18n="skills.desc">Keahlian utama yang saya gunakan dalam project.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card card--pad">
+            <h3>Front-End</h3>
+            <p class="muted">HTML, CSS, JavaScript</p>
+          </div>
+          <div class="card card--pad">
+            <h3>Website Designer</h3>
+            <p class="muted">Google Site</p>
+          </div>
+          <div class="card card--pad">
+            <h3>Responsive Design</h3>
+            <p class="muted" data-i18n="skills.resp">Layout Desktop, Tablet, Mobile</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="work.title">Karyaku</h2>
+          <p class="section__desc" data-i18n="work.desc">Company profile + booking, responsive, dan animasi di homescreen.</p>
+        </div>
+
+        <div class="work">
+          <div class="work__media">
+            <img class="work__img" src="karyaku.png" alt="Preview karya website" data-i18n-alt="img.work" />
+          </div>
+          <div class="work__info">
+            <div class="card card--pad">
+              <h3>Website Company Profile</h3>
+              <p class="bodyText" data-i18n="work.body">
+                Responsive design 3 layout (Desktop, Tablet, Mobile) dengan homescreen animation
+                (3 triggered) yang bergerak secara otomatis.
+              </p>
+              <div class="work__badges">
+                <span class="badge" data-i18n="work.b1">Booking Terintegrasi</span>
+                <span class="badge">Responsive</span>
+                <span class="badge" data-i18n="work.b3">Animasi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certificates">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="nav.certs">Sertifikat</h2>
+          <p class="section__desc" data-i18n="cert.desc">Klik tombol untuk melihat file sertifikat.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card card--pad">
+            <h3>HTML</h3>
+            <p class="muted" data-i18n="cert.html">Sertifikat HTML</p>
+            <a class="btn btn--small btn--primary" href="Sertifikat_html.pdf" target="_blank" rel="noopener" data-i18n="cert.btn">Klik disini</a>
+          </div>
+          <div class="card card--pad">
+            <h3>CSS</h3>
+            <p class="muted" data-i18n="cert.css">Sertifikat CSS</p>
+            <a class="btn btn--small btn--primary" href="sertifikat_css.pdf" target="_blank" rel="noopener" data-i18n="cert.btn">Klik disini</a>
+          </div>
+          <div class="card card--pad">
+            <h3>JavaScript</h3>
+            <p class="muted" data-i18n="cert.js">Sertifikat JavaScript</p>
+            <a class="btn btn--small btn--primary" href="Sertifikat_js.pdf" target="_blank" rel="noopener" data-i18n="cert.btn">Klik disini</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> <span data-i18n="nav.brand">Portofolio</span></p>
+        <a class="muted" href="#top" data-i18n="footer.top">Kembali ke atas</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
